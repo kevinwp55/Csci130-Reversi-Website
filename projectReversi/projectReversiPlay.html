@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title> Csci 130 Project: Reversi Game Settings </title>
+	<link rel="stylesheet" type="text/css" href="CSS/homeCss.css">
+</head>
+<body>
+	<h1> Csci 130: Project Reversi Game Settings </h1>
+	<div class="navTag">
+		<button onclick="window.location.href = 'projectReversiHome.html';" width="350" height="100"> Home </button>
+		<button onclick="window.location.href = 'projectReversiLogin.html';" width="350" height="100"> Log In </button>
+		<button onclick="window.location.href = 'projectReversiHow2Play.html';" width="350" height="100"> How To Play </button>
+		<button onclick="window.location.href = 'projectReversiPlay.html';" width="350" height="100"> Play Game </button>
+		<button onclick="window.location.href = 'projectReversiCredits.html';" width="350" height="100"> Credits </button>
+	</div>
+	
+	<div id="GameSetup">
+		<h2> Game Setup </h2>
+		<form action="http://localhost/mysite/projectReversi/projectReversiGame.html" method="get">
+			<label for="GameMode"> Game Mode: </label>
+			<select id="GameMode" name="gameMode">
+				<option value="PvP"> 2 Player </option>
+				<option value="ComputerEasy"> Computer (Easy) </option>
+				<option value="ComputerHard"> Computer (Hard) </option>
+			</select> <br><br>
+		
+			<label for="BoardSize"> Board Size: </label>
+			<select id="BoardSize" name="boardSize">
+				<option value="4"> 4x4 </option>
+				<option value="6"> 6x6 </option>
+				<option value="8" selected="selected"> 8x8 </option>
+			</select> <br><br>
+			
+			<label for="BoardColor"> Board Color </label>
+			<select id="BoardColor" name="boardColor">
+				<option value="green"> Green </option>
+				<option value="rosybrown"> Rosy </option>
+				<option value="teal"> Teal </option>
+				<option value="aqua"> Aqua </option>
+			</select> <br><br>
+			
+			<label for="p1DiskColor"> Player 1 Color: </label>
+			<select id="p1Color" name="p1color">
+				<option value="white"> White </option>
+				<option value="silver"> Silver </option>
+				<option value="orange"> Orange </option>
+				<option value="maroon"> Maroon </option>
+			</select> <br><br>
+			
+			<label for="p2DiskColor"> Player 2 Color: </label>
+			<select id="p2Color" name="p2color">
+				<option value="black"> Black </option>
+				<option value="navy"> Navyblue </option>
+				<option value="purple"> Purple </option>
+				<option value="snow"> Snow </option>
+			</select>
+			<br><br>
+			<input type="submit" value="Play Game!">
+		</form>
+	</div>
+</body>
+</html>

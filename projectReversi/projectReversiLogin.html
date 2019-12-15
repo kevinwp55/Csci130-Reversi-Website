@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title> Csci 130 Project: Reversi Login </title>
+	<link rel="stylesheet" type="text/css" href="CSS/homeCss.css">
+</head>
+<body>
+	<h1> Csci 130: Project Reversi Log In! </h1>
+	<div class="navTag">
+		<button onclick="window.location.href = 'projectReversiHome.html';" width="350" height="100"> Home </button>
+		<button onclick="window.location.href = 'projectReversiLogin.html';" width="350" height="100"> Log In </button>
+		<button onclick="window.location.href = 'projectReversiHow2Play.html';" width="350" height="100"> How To Play </button>
+		<button onclick="window.location.href = 'projectReversiPlay.html';" width="350" height="100"> Play Game </button>
+		<button onclick="window.location.href = 'projectReversiCredits.html';" width="350" height="100"> Credits </button>
+	</div>
+	
+	<div id="Login"> 
+		<div id="information">
+		<h2> Log In </h2>
+		<form action="http://localhost/mysite/projectReversi/PHP/prLogin.php" method="post">
+			<label for="uName"><b>Username:</b></label><br>
+			<input type="text" name="uName" placeholder="enter username" required><br><br>
+			<label for="pWord"><b>Password:</b></label><br>
+			<input type="password" name="pWord" placeholder="enter password" required><br><br>
+			<input type="submit" value="Log In">
+		</form>
+		<br>
+		<button onclick="window.location.href = 'projectReversiRegister.html';">Register</button>
+		<p> Registering an account on this site does not require any personal information. <br>
+			Having an account only records your game info (wins, loses, score, etc.) <br>
+			Inactive accounts are removed after 14 days.
+		</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="JS/prLoginDisplay.js">
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,76 @@
+#rowcol
+{
+	position:relative;
+	left: 9999px;
+}
+
+#tri td
+{
+	background-color:sienna;
+	font-size: 18px;
+}
+
+.columnID
+{
+	background-color:sienna;
+}
+
+table
+{
+	background-color: black;
+	table-layout: fixed;
+	float: left;
+	border-collapse: collapse;
+}
+
+#gameBoard td
+{
+	text-indent: -9999px;
+	overflow: hidden;
+	font-size: 18px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+table td
+{
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+table tr, th, td
+{
+	border: 1px solid black;
+}
+
+.circle
+{
+	position: relative;
+	top: -10px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 100%;
+	width: 100%;
+	height: 100%;
+
+}
+
+#rowID
+{
+	text-indent: 30px;
+	font-weight: bold;
+}
+
+#gameInfo
+{
+	display: inline-block;
+	padding-left: 20px;
+	margin-left: 20px;
+}
+
+.playerInfo
+{
+	padding: 10px;
+}

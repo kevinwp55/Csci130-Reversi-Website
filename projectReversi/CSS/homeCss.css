@@ -1,0 +1,97 @@
+.navTag {
+	background: black;
+	align: left;
+}
+		
+#warning {
+	font-size: 18px;
+}
+
+#content {
+	font-size: 18px;
+}
+
+button {
+	background: black;
+	border: none;
+	color: white;
+	padding: 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#Home {
+	background: snow;
+	border: 1px solid black;
+	padding: 15px;
+}
+
+li {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#Login {
+	background: white;
+	border: 1px solid black;
+	padding: 15px;
+}
+
+#information {
+	border: 3px solid lightslategrey;
+	margin: 5px;
+	padding: 15px;
+}
+
+#userAccount {
+	border: 3px solid lightslategrey;
+	margin: 5px;
+	padding: 15px;
+}
+		
+#HowTo {
+	background: silver;
+	border: 1px solid black;
+	padding: 15px;
+}
+
+#GameSetup {
+	background: lightslategrey;
+	border: 1px solid black;
+	padding: 15px;
+}
+
+label {
+	font-size: 20px;
+}
+		
+select {
+	padding: 15px;
+	border-radius: 16px;
+}
+
+#Credits {
+	background: darkslategrey;
+	color: snow;
+	border: 1px solid black;
+	padding: 20px;
+}
+		
+button:hover {
+	background: grey;
+}
+
+label {
+	padding: 10px;
+}
+
+input {
+	padding: 10px;
+}
+
+input[type=submit] {
+	padding: 20px; 
+	border-radius:12px;
+	font-size: 18px;
+	background-color: lightcyan;
+}

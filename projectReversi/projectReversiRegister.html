@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title> Register </title>
+	<link rel="stylesheet" type="text/css" href="CSS/homeCss.css">
+</head>
+<body>
+	<h1> Csci 130 Project Reversi Register Page </h1>
+	<div class="navTag">
+		<button onclick="window.location.href = 'projectReversiHome.html';" width="350" height="100"> Home </button>
+		<button onclick="window.location.href = 'projectReversiLogin.html';" width="350" height="100"> Log In </button>
+		<button onclick="window.location.href = 'projectReversiHow2Play.html';" width="350" height="100"> How To Play </button>
+		<button onclick="window.location.href = 'projectReversiPlay.html';" width="350" height="100"> Play Game </button>
+		<button onclick="window.location.href = 'projectReversiCredits.html';" width="350" height="100"> Credits </button>
+	</div>
+	<br><br>
+	<form action="http://localhost/mysite/projectReversi/PHP/prReg.php" method="post">
+		<label for="uName"><b>Username:</b></label><br>
+		<input type="text" name="uName" placeholder="enter username" required><br><br>
+		<label for="email"><b>Email:</b></label><br>
+		<input type="text" name="email0" placeholder="enter email" required><br><br>
+		<label for="email"><b>Confirm Email:</b></label><br>
+		<input type="text" name="email1" placeholder="confirm email" required><br><br>
+		<label for="pWord"><b>Password:</b></label><br>
+		<input type="text" name="pWord0" placeholder="enter password" required><br><br>
+		<label for="pWord"><b>Re-Enter Password:</b></label><br>
+		<input type="text" name="pWord1" placeholder="reenter password" required><br><br>
+		<input type="submit" value="Register">
+	</form>
+	<br><br>
+	<button onclick="window.location.href = 'projectReversiHome.html';">Back To Home</button>
+</body>
+</html>

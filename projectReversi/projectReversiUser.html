@@ -1,0 +1,70 @@
+<?php session_start(); ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title> Csci 130 Project: Reversi User Profile </title>
+	<link rel="stylesheet" type="text/css" href="CSS/homeCss.css">
+	<link rel="stylesheet" type="text/css" href="CSS/userInfo.css">
+</head>
+<body onload="requestUserProf()">
+	<h1> Csci 130: Project Reversi User Profile </h1>
+	<div class="navTag">
+		<button onclick="window.location.href = 'projectReversiHome.html';" width="350" height="100"> Home </button>
+		<button onclick="" width="350" height="100"> Profile </button>
+		<button onclick="window.location.href = 'projectReversiHow2Play.html';" width="350" height="100"> How To Play </button>
+		<button onclick="window.location.href = 'projectReversiPlay.html';" width="350" height="100"> Play Game </button>
+		<button onclick="window.location.href = 'projectReversiCredits.html';" width="350" height="100"> Credits </button>
+	</div>
+	
+	<div id="userAccount">
+		<div id="logout">
+			<button onclick="logOut()"> Logout </button>
+		</div>
+		<h1> Hey Hi Hello! </h1>
+		<h2 id="uname"> </h2>
+		<div id="pic"> 
+			<h3>Profile Picture</h3>
+			<img id='image' src="" width='150' height='175' alt='Default Profile Picture'>
+			<form action="http://localhost/mysite/projectReversi/PHP/saveImg.php" method="post" enctype="multipart/form-data">
+				<input type="file" name="fileup" id="fileup" accept="image/*" required><br>
+				<input type="hidden" name="username" id="username" value="here"><br>
+				<input type="submit" value="Upload Image" name="submit">
+			</form>
+		</div>
+		<aside id="playerStats">
+			<h2> Stats </h2>
+			<h3 id="ratio"> W/L Ratio: 0% </h3>
+			<h3 id="avgTime"> Avg Time: 0 </h3>
+		</aside>
+		<div id="gameRecord"> <h2> Game History </h2>
+			<button id="orderByPoints" onclick="orderByPoints()"> By Highest Score </button>
+			<button id="orderByTime" onclick="orderByTime()"> By Fastest Time </button>
+			<button id="orderByRecent" onclick="orderByRecent()"> By Most Recent </button>
+			<table id="gameTable">
+				<thead>
+				<tr>
+					<th> Mode </th>
+					<th> Game Size </th>
+					<th id="score"> Your Points </th>
+					<th> Opponent Points </th>
+					<th> W / L </th>
+					<th id="time"> Time Played </th>
+					<th id="recent"> Date Played </th>
+				</tr>
+				</thead>
+				<tbody id="insertInfo">
+				</tbody>
+			</table>
+			<div id="infoDisplay">
+				
+			</div>
+		
+		</div>
+		
+	</div>
+	<script src="JS/prUserDisplay.js">
+	</script>
+</body>
+</html>

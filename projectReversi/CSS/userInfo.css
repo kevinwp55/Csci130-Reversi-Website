@@ -1,0 +1,35 @@
+#gameTable tr, th
+{
+	margin: 12px;
+	padding: 12px;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+}
+
+#gameTable table, td
+{
+	background-color: white;
+	text-align: center;
+	color: black;
+	font-size: 20px;
+	padding: 8px;
+}
+
+table, td
+{
+	border: 1px solid black;
+}
+
+aside
+{
+	position: relative;
+	left: 400px;
+	top: -50px;
+}
+
+#gameRecord
+{
+	position: relative;
+	top: -100px;
+}
